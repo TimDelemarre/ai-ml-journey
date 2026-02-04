@@ -1,11 +1,13 @@
-name = "Tim"
-field = "Immunology"
-years_experience =6
+# Week 1: Python basics
 
-print(name)
-print(field)
-print(years_experience)
+skills = ["Python", "Git", "Immunology"]
 
-print (type(name))
-print (type(field))
-print (type(years_experience))
+def describe_skill(skill):
+    if skill == "Python":
+        return "essential for AI/ML"
+    else:
+        return "useful background skill"
+
+for skill in skills:
+    description = describe_skill(skill)
+    print(f"{skill}: {description}")
